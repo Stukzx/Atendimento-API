@@ -1,0 +1,28 @@
+### Leitura
+GET http://localhost:3000/services
+
+### Criação
+POST http://localhost:3000/services
+Content-Type: application/json
+
+{
+    "name": "Gabriel Colares",
+    "type": "Instalação de RAM",
+    "time": "09:00",
+    "phone": "92 9912345678",
+    "weekday": 0
+}
+
+### Atualização
+PUT http://localhost:3000/services/1/10:00
+Content-Type: application/json
+
+{
+    "name": "Davi",
+    "type": "Instalação de RAM",
+    "time": "12:00",
+    "phone": "92 9998765432"
+}
+
+### Exclusão
+DELETE http://localhost:3000/services/0/09:00
