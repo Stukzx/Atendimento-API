@@ -107,3 +107,10 @@ fetch('http://localhost:3000/services/0/08:00', {
   .then(msg => console.log(msg))
   .catch(error => console.error('Erro:', error));
 ```
+
+### Notas
+
+Certifique-se de que o servidor está em execução na porta 3000 ou ajuste a URL conforme necessário.
+Todos os exemplos de requisição usam o fetch API do JavaScript para interagir com a API.
+
+Para mais informações ou para contribuir com melhorias, consulte o contribuições e licença deste projeto.
