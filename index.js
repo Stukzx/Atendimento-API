@@ -42,6 +42,9 @@ const server = http.createServer((req, res) => {
     const edit = queryParams.get('edit');
     const del = queryParams.get('del');
 
+    // Configuração dos cabeçalhos CORS
+    res.setHeader('Access-Control-Allow-Origin', '*');
+
     if (path === '/services') {
         const database = readServices();
 
