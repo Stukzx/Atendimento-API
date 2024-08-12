@@ -6,6 +6,10 @@ const server = http.createServer((req, res) => {
     // Configuração dos cabeçalhos CORS
     res.setHeader('Access-Control-Allow-Origin', '*');
 
+    if (req.url === '/') {
+        return res.end('Hello, World!');
+    }
+
     if (req.method === 'GET' && req.url === '/services') {
         return GETServices(req, res);
     }
